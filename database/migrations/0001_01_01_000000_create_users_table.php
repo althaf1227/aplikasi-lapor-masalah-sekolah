@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('siswa_id');
             $table->string('nama');
             $table->string('nis')->nullable()->unique();
             $table->string('code_guru')->nullable()->unique();
