@@ -8,4 +8,8 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    define: {
+        'process.env': process.env
+    },
 });
+
