@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => env('AUTH_GUARD', 'web'),
+        'guard' => env('AUTH_GUARD', 'web', 'guru', 'siswa'),
         'passwords' => env('AUTH_PASSWORD_BROKER', 'users'),
     ],
 
@@ -40,7 +40,16 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'guru' => [
+            'driver' => 'session',
+            'provider' => 'gurus',
+        ],
+        'siswa' => [
+            'driver' => 'session',
+            'provider' => 'siswas',
+        ],
     ],
+
 
     /*
     |--------------------------------------------------------------------------

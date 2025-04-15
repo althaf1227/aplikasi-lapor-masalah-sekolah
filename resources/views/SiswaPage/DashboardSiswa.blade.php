@@ -75,7 +75,7 @@
                         <h4 class="text-center fw-bold">Lapor Masalah</h4>
                         <p>Silahkan ajukan masalah kepada guru BK <br>kapanpun</p>
                         <div class="text-center">
-                            <button class="btn btn-warning w-50">Mulai Chat</button>
+                            <a href="{{ route('chat.guru.list') }}" class="btn btn-warning w-50"> Mulai Chat</a>
                         </div>
                     </div>
                 </div>
